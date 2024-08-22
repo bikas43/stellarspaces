@@ -5,19 +5,14 @@ import logo from '../Images/Logo/logo-color.png';
 const menuItems = [
     { id: 'home', label: 'Home', route: '/home' },
     {
-        id: 'products',
-        label: 'Products',
-        route: '/products',
+        id: 'properties',
+        label: 'Properties',
+        route: '/properties',
        submenu: [
-            { label: 'CCTV Camera', route: '/cctv_camera' },
-            { label: 'Biometric Devices', route: '/biometric_devices' },
-            { label: 'Video Door', route: '/video_door' },
-            { label: 'Wireless CCTV Camera', route: '/wireless_cctv_camera' },
-            { label: 'DVR', route: '/dvr' },
-            { label: 'GPS', route: '/gps' },
-            { label: 'Walkie Talkies', route: '/walkie talkies' },
-            { label: 'Fire Extinguisher', route: '/fire_extinguisher' },
-            { label: 'Boom Barrier', route: '/boom_barrier' },
+            { label: 'Land', route: '/Land' },
+            { label: 'Simplex', route: '/Simplex' },
+            { label: 'Duplex', route: '/Duplex' },
+            { label: 'Appartment', route: '/Appartment' },
         ]
     },
     {
@@ -25,8 +20,24 @@ const menuItems = [
         label: 'Services',
         route: '/services',
         submenu: [
-            { label: 'Managed Services', route: '/managed_services' },
+            { label: 'Buy or Sell Consultation', route: '/BuyorSellConsultation' },
+            { label: 'Property Registration', route: '/PropertyRegistration' },
+            { label: 'Building Construction', route: '/BuildingConstruction' },
+            { label: 'Building Re-Construction', route: '/BuildingReConstruction' },
+            { label: 'Building Modification', route: '/BuildingModification' },
         ]
+    },
+    {
+        id: 'productdelear',
+        label: 'Products',
+        route: '/products',
+        // submenu: [
+        //     { label: 'Buy or Sell Consultation', route: '/PropertyConsultation' },
+        //     { label: 'Property Registration', route: '/PropertyRegistration' },
+        //     { label: 'Building Construction', route: '/Building Construction' },
+        //     { label: 'Building Re-Construction', route: '/BuildingReConstruction' },
+        //     { label: 'Building Modification', route: '/BuildingModification' },
+        // ]
     },
    
     {

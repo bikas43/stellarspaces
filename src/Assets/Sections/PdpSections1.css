@@ -1,0 +1,150 @@
+.PdpSections1-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.PdpSections1-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./PdpSection1-Sticky-Background.jpg') center center/cover no-repeat;
+    z-index: -1;
+    background-attachment: fixed;
+    /* Keeps the background fixed during scrolling */
+
+}
+
+.PdpSections1-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PdpSections1-container-skew {
+    background-color: rgba(0, 66, 117, 0.6);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PdpSections1-container-skew::before,
+.PdpSections1-container-skew::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    rotate: -5deg;
+    left: -10%;
+}
+
+.PdpSections1-container-skew::before {
+    background-color: rgba(255, 255, 255, 1);
+    top: -90%;
+}
+
+.PdpSections1-container-skew::after {
+    background-color: rgba(248, 248, 248, 1);
+    bottom: -86%;
+}
+
+.PdpSections1-container-skew-object {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.PdpSections1-container-skew-object h3 {
+    font-size: 2.5rem;
+}
+
+.PdpSections1-container-skew-object-icons-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 3px;
+    z-index: 10;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+}
+
+.PdpSections1-container-skew-object-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 250px;
+    max-height: 250px;
+    min-height: 100px;
+    min-height: 100px;
+    height: 150px;
+    width: 150px;
+    background-color: #004c8393;
+    border-radius: 2px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.PdpSections1-container-skew-object-icons:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+}
+
+
+.PdpSections1-container-skew-object-icons p {
+    color: aliceblue;
+    letter-spacing: .1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .PdpSections1-background {
+        background-size: cover;
+    }
+
+    .PdpSections1-container-skew::before,
+    .PdpSections1-container-skew::after {
+        width: 170%;
+    }
+
+    .PdpSections1-container-skew-object h3 {
+        font-size: 1.6rem;
+    }
+    .PdpSections1-container-skew-object p {
+        font-size: .8rem;
+    }
+
+    .PdpSections1-container-skew-object-icons {
+        transition: .3s ease-in-out;
+        height: 100px;
+        width: 100px;
+        transition: .2s ease-in-out;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .PdpSections1-background {
+        background-size: cover;
+    }
+}
