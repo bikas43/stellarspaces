@@ -1,7 +1,7 @@
 import React from 'react'
 import PdpSections1 from '../../../Assets/Sections/PdpSections1'
 
-const LandingPageSection2 = () => {
+const LandingPageSection3 = () => {
   return (
     <div>
       <PdpSections1 />
@@ -9,4 +9,4 @@ const LandingPageSection2 = () => {
   )
 }
 
-export default LandingPageSection2
+export default LandingPageSection3

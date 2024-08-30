@@ -1,0 +1,16 @@
+.pdp-svg-icon{
+    height: 50px;
+    width: 50px;
+    fill: rgb(66, 66, 66);
+    stroke-width: 50px; /* Stroke thickness */
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.pdp-svg-icon:hover{
+    height: 50px;
+    width: 50px;
+    fill: rgb(18, 19, 29);
+    stroke-width: 50px; /* Stroke thickness */
+    scale: 1.5;
+}

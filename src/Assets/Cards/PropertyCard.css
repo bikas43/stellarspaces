@@ -1,0 +1,45 @@
+.property-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 75%; /* 4:3 aspect ratio */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+
+  }
+  
+  .property-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .property-card:hover .property-overlay {
+    opacity: 0;
+  }
+  
+  .property-card h2 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .property-card p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }
+  

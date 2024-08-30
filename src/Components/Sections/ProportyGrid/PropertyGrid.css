@@ -1,0 +1,9 @@
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 2fr));
+    column-count: 6;
+    max-width: 1200px;
+    gap: 20px;
+    padding: 20px;
+  }
+  
