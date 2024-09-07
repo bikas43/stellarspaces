@@ -1,9 +1,79 @@
+/* Parent Masonry Container */
+.property-grid-container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .property-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 2fr));
-    column-count: 6;
-    max-width: 1200px;
-    gap: 20px;
-    padding: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  padding: 20px;
+  width: max-content;
+}
+
+.property-card {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover img {
+  transform: scale(1.01); /* Adds zoom effect on hover */
+}
+
+.property-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.property-card:hover .property-overlay {
+  opacity: 0;
+}
+
+.property-overlay h2 {
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.property-overlay p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .property-grid {
+    column-gap: 5px;
+    padding: 2px;
+    height: 480px;
   }
-  
+
+  .property-overlay h2 {
+    font-size: 12px;
+  }
+
+  .property-overlay p {
+    font-size: 10px;
+  }
+}

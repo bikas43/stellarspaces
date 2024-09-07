@@ -1,9 +1,6 @@
 import React from 'react'
 import ImageCarousel3 from '../../../Assets/Carousel/ImageCarousel3'
 import './LandingPageSection0.css'
-import ProportyImage1 from '../../../Assets/Carousel/3d-electric-car-building.jpg'
-import ProportyImage2 from '../../../Assets/Carousel/3d-rendering-loft-luxury-living-room-with-bookshelf-near-bookshelf.jpg'
-import ProportyImage3 from '../../../Assets/Carousel/analog-landscape-city-with-buildings.jpg'
 import ProportyImage4 from '../../../Images/Properties/LingarajTribhuvan.png'
 import ProportyImage5 from '../../../Images/Properties/Saraswati-Ratna-Kunja.webp'
 import ProportyImage6 from '../../../Images/Properties/BrajoNiwas.webp'
@@ -11,6 +8,7 @@ const LandingPageSection0 = () => {
 
     const properties = [
         {
+            propertyName:'Sri Lingaraj Tribhuvan',
             image: ProportyImage4,
             title: '3 BHK',
             price: '1.5 cr',
@@ -23,6 +21,7 @@ const LandingPageSection0 = () => {
             isForRentSale: 'Sale', // 'Rent' 'Rent' or 'Sale'
         },
         {
+            propertyName:'Brajo Niwas',
             image: ProportyImage5,
             title: '2 BHK',
             price: '876,000',
@@ -34,6 +33,7 @@ const LandingPageSection0 = () => {
             isForRentSale: 'Sale', // 'Rent' or 'Sale'
         },
         {
+            propertyName:'Sri Lingaraj Tribhuvan',
             image: ProportyImage6,
             title: '5 BHK',
             price: '540,000',
@@ -45,6 +45,7 @@ const LandingPageSection0 = () => {
             isForRentSale: 'Sale', // 'Rent' or 'Sale'
         },
         {
+            propertyName:'Sri Lingaraj Tribhuvan',
             image: ProportyImage5,
             title: '3 BHK',
             price: '540,000',
@@ -57,6 +58,7 @@ const LandingPageSection0 = () => {
             isForRentSale: 'Sale', // 'Rent' or 'Sale'
         },
         {
+            propertyName:'Sri Lingaraj Tribhuvan',
             image: ProportyImage5,
             title: '3 BHK',
             price: '876,000',
@@ -68,6 +70,7 @@ const LandingPageSection0 = () => {
             isForRentSale: 'Sale', // 'Rent' or 'Sale'
         },
         {
+            propertyName:'Sri Lingaraj Tribhuvan',
             image: ProportyImage5,
             title: '3 BHK',
             price: '540,000',
@@ -80,6 +83,7 @@ const LandingPageSection0 = () => {
             isForRentSale: 'Sale', // 'Rent' or 'Sale'
         },
         {
+            propertyName:'Sri Lingaraj Tribhuvan',
             image: ProportyImage5,
             title: '3 BHK',
             price: '876,000',
@@ -91,6 +95,7 @@ const LandingPageSection0 = () => {
             isForRentSale: 'Sale', // 'Rent' or 'Sale'
         },
         {
+            propertyName:'Sri Lingaraj Tribhuvan',
             image: ProportyImage5,
             title: '4 BHK',
             price: '540,000',
@@ -107,7 +112,7 @@ const LandingPageSection0 = () => {
     return (
         <div className='LandingPageSection0'>
         <h1>Latest & Featured Properties</h1>  
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, molestias iure labore soluta laudantium deleniti quae. Modi esse nihil praesentium id impedit atque? Repudiandae culpa error nisi dolore perferendis. Blanditiis.</p>
+        <p>Discover the Latest & Featured Properties: Handpicked Selections of Prime Buildings for Sale, Offering Unmatched Value and Location!</p>
             <ImageCarousel3 properties={properties} />
         </div>
     )

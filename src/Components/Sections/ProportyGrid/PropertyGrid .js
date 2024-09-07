@@ -1,16 +1,17 @@
 import React from 'react';
 import PropertyCard from '../../../Assets/Cards/PropertyCard';
 import './PropertyGrid.css';
-import PropertyGrid0 from '../../../Images/Properties/pexels-eberhardgross-1624496.jpg'
-import PropertyGrid1 from '../../../Images/Properties/Appartment.webp'
-import PropertyGrid2 from '../../../Images/Properties/Villa.webp'
-import PropertyGrid3 from '../../../Images/Properties/SingleFamilyHome.webp'
-import PropertyGrid4 from '../../../Images/Properties/room-2.jpg'
-import PropertyGrid5 from '../../../Images/Properties/Shop.webp'
-import PropertyGrid6 from '../../../Images/Properties/Office.webp'
-import PropertyGrid7 from '../../../Images/Properties/Condo.webp'
-import PropertyGrid8 from '../../../Images/Properties/Land.webp'
-import PropertyGrid9 from '../../../Images/Properties/new-buildings-with-green-areas.jpg'
+import PropertyGrid0 from '../../../Images/Properties/pexels-eberhardgross-1624496.jpg';
+import PropertyGrid1 from '../../../Images/Properties/Appartment.webp';
+import PropertyGrid2 from '../../../Images/Properties/Villa.webp';
+import PropertyGrid3 from '../../../Images/Properties/SingleFamilyHome.webp';
+import PropertyGrid4 from '../../../Images/Properties/room-2.jpg';
+import PropertyGrid5 from '../../../Images/Properties/Shop.webp';
+import PropertyGrid6 from '../../../Images/Properties/Office.webp';
+import PropertyGrid7 from '../../../Images/Properties/Condo.webp';
+import PropertyGrid8 from '../../../Images/Properties/Land.webp';
+import PropertyGrid9 from '../../../Images/Properties/new-buildings-with-green-areas.jpg';
+
 
 const propertyData = [
   { image: PropertyGrid0, title: 'Apartment', propertyCount: 17 },
@@ -26,15 +27,17 @@ const propertyData = [
 
 const PropertyGrid = () => {
   return (
-    <div className="property-grid">
-      {propertyData.map((property, index) => (
-        <PropertyCard
-          key={index}
-          image={property.image}
-          title={property.title}
-          propertyCount={property.propertyCount}
-        />
-      ))}
+    <div className="property-grid-container">
+      <div className="property-grid">
+        {propertyData.map((property, index) => (
+          <PropertyCard
+            key={index}
+            image={property.image}
+            title={property.title}
+            propertyCount={property.propertyCount}
+          />
+        ))}
+      </div>
     </div>
   );
 };

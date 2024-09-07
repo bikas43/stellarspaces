@@ -8,7 +8,7 @@ import SvgPropertySell from '../../Assets/Icons/PropertySell';
 import SvgSupportLeady from '../../Assets/Icons/SupportLeady';
 
 const PdpSections1 = () => {
-    const { isRevealed, elementRef } = useScrollReveal(0.6);
+    const { isRevealed, elementRef } = useScrollReveal(0.2);
     const styles = {
         opacity: isRevealed ? 1 : 0,
         transform: isRevealed ? 'translateY(0)' : 'translateY(80px)',

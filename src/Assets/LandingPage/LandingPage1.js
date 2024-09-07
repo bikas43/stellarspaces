@@ -8,6 +8,7 @@ import ImageCarouselimage3 from '../Carousel/3d-rendering-loft-luxury-living-roo
 import ImageCarouselimage4 from '../Carousel/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg';
 
 
+
 const LandingPage1 = () => {
     const title = "Stellar Spaces";
     const images = [ImageCarouselimage3,ImageCarouselimage2,ImageCarouselimage1,ImageCarouselimage4];

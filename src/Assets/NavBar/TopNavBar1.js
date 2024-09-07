@@ -7,14 +7,11 @@ function TopNavBar1({ logo, menuItems }) {
     const location = useLocation();
     const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
     const [visible, setVisible] = useState(true);
-
-
+    const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu
 
     const handleMenuClick = (route) => {
         if (route === '/') {
-            // Clear local storage
             localStorage.clear();
-            // Reload the page
             window.location.reload();
         } else {
             navigate(route);
@@ -68,14 +65,27 @@ function TopNavBar1({ logo, menuItems }) {
         <div className={`navbar ${visible ? 'visible' : 'hidden'}`}>
             <div className="navbar-content">
                 <div className="logo" onClick={() => navigate('/')}>
-                    <img src={logo} alt="Jss Industries Logo" />
+                    <img src={logo} alt="Stellar Spaces Logo" />
                 </div>
-                <div className="menu">
+
+                {/* Hamburger Menu */}
+                <button
+                    className={`hamburger ${menuOpen ? 'active' : ''}`}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                </button>
+
+                {/* Menu */}
+                <div className={`menu ${menuOpen ? 'open' : ''}`}>
                     {renderMenuItems(menuItems)}
                 </div>
             </div>
         </div>
     );
 }
+
 
 export default TopNavBar1;

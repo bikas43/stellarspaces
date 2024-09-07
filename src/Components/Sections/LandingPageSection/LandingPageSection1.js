@@ -1,10 +1,6 @@
-import React, { useState } from 'react';
-import { useScrollReveal } from '../../../Functions/useScrollReveal';
-
+import React from 'react';
 import InfoCard1 from '../../../Assets/Cards/InfoCard1';
 import './LandingPageSection1.css';
-
-
 
 const LandingPageSection1 = () => {
   const products = [
@@ -35,25 +31,23 @@ const LandingPageSection1 = () => {
   ];
 
 
-  const { isRevealed, elementRef } = useScrollReveal(0.3);
-
-  const styles = {
-    opacity: isRevealed ? 1 : 0,
-    transform: isRevealed ? 'translateY(0)' : 'translateY(80px)',
-    transition: 'opacity 0.8s ease, transform 0.8s ease',
-  };
-  
   return (
-    <div className='LandingPageSection1-container' >
-      {products.map((product) => (
-        <div key={product.id} className='LandingPageSection1-container-card' ref={elementRef} style={styles}>
-          <InfoCard1
-            title={product.title}
-            description={product.description}
-            link={product.link}
-          />
-        </div>
-      ))}
+    <div className='LandingPageSection1-container'>
+      {products.map((product, index) => {
+
+        return (
+          <div 
+            key={product.id} 
+            className='LandingPageSection1-container-card'
+          >
+            <InfoCard1
+              title={product.title}
+              description={product.description}
+              link={product.link}
+            />
+          </div>
+        );
+      })}
     </div>
   );
 };

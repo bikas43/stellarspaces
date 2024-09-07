@@ -1,6 +1,10 @@
+/* *{
+    border: 1px solid red;
+} */
 .PdpSections1-container {
+
     height: 100vh;
-    width: 100vw;
+    width: calc(100vw - 17px);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -12,10 +16,9 @@
 .PdpSections1-background {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url('./PdpSection1-Sticky-Background.jpg') center center/cover no-repeat;
+    width: 100%;
+    height: auto;
+    background: url('./PdpSection1-Sticky-Background.jpg') no-repeat;
     z-index: -1;
     background-attachment: fixed;
     overflow: hidden;
@@ -55,12 +58,12 @@
 }
 
 .PdpSections1-container-skew::before {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255);
     top: -90%;
 }
 
 .PdpSections1-container-skew::after {
-    background-color: rgba(248, 248, 248, 1);
+    background-color: rgb(255, 255, 255);
     bottom: -86%;
 }
 
@@ -73,7 +76,9 @@
 }
 
 .PdpSections1-container-skew-object h3 {
-    font-size: 2.5rem;
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
 }
 
 .PdpSections1-container-skew-object-icons-container {
@@ -120,6 +125,8 @@
 
     .PdpSections1-background {
         background-size: cover;
+        background-attachment: scroll;
+
     }
 
     .PdpSections1-container-skew::before,
@@ -128,18 +135,18 @@
     }
 
     .PdpSections1-container-skew-object h3 {
-        font-size: 1.6rem;
+        font-size: 1.62rem;
     }
     .PdpSections1-container-skew-object p {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     .PdpSections1-container-skew-object-icons {
         transition: .3s ease-in-out;
         height: 100px;
         width: 100px;
-        transition: .2s ease-in-out;
-        padding: 5px;
+        transition: .3s ease-in-out;
+        padding: 10px;
     }
 }
 
